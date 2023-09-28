@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+
+.about, .instructor-bio, .contact {
+    padding: 50px;
+}
+
+.about, .instructor-bio {
+    background-color: #f4f4f4;
+}
+
+.contact {
+    background-color: #eaeaea;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Add more CSS styling as per your preference */
