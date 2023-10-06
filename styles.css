@@ -8,11 +8,11 @@ body {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 100px;
+    padding: 50px;
 }
 
 .about, .instructor-bio, .contact {
-    padding: 50px;
+    padding: 25px;
 }
 
 .about, .instructor-bio {
