@@ -12,7 +12,7 @@ body {
     padding: 2em; /* Increased padding for better spacing */
 }
 
-.about, .instructor-bio, .contact {
+.about, .instructor-bio, .contact, .special-event{
     padding: 20px; /* Adjusted padding for better spacing */
     max-width: 800px; /* Added max-width for better adaptability */
     margin: 0 auto; /* Center the content */
