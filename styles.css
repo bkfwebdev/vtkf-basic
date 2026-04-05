@@ -1,21 +1,59 @@
+/* Remove bullets and padding from all ul/ol */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cost section styling for consistency */
+.cost-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 1.5em auto;
+  box-sizing: border-box;
+}
+.cost-item {
+  text-align: left;
+  padding: 0.5em 0.5em;
+  background: #f9f9f9;
+  border-radius: 6px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .cost-list {
+    max-width: 100vw;
+    padding: 0 2vw;
+  }
+  .cost-item {
+    font-size: 0.98em;
+    padding: 0.5em 0.3em;
+  }
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 16px; /* Added for better adaptability */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #fff;
 }
 
 .banner {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2em; /* Increased padding for better spacing */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2em 1em;
 }
 
-.about, .instructor-bio, .contact, .special-event{
-    padding: 20px; /* Adjusted padding for better spacing */
-    max-width: 800px; /* Added max-width for better adaptability */
-    margin: 0 auto; /* Center the content */
+
+.about, .instructor-bio, .contact, .special-event {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .about, .instructor-bio {
@@ -90,10 +128,10 @@ body {
 }
 
 /* Ensure sections are centered */
-section {
   width: 100%;
   max-width: 800px;
-  margin: 20px 0;
+  margin: 20px auto;
+  box-sizing: border-box;
 }
 
 /* Center header content */
@@ -105,18 +143,83 @@ header.banner {
   margin: 0;
 }
 
-/* Style links to appear inline and centered */
+
 a {
   text-decoration: none;
   color: inherit;
+  word-break: break-word;
 }
 
 a p, a h2 {
   margin: 0;
 }
 
-ul, ol {
   list-style: none;
-  padding: 0;
+  padding: 0 0 0 1.2em;
   margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .about, .instructor-bio, .contact, .special-event, section {
+    max-width: 98vw;
+    padding: 16px 4vw;
+  }
+  .banner {
+    padding: 1.2em 0.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  .banner h1 {
+    font-size: 1.3em;
+    margin: 0.3em 0;
+  }
+  .banner p {
+    font-size: 1em;
+  }
+  .about, .instructor-bio, .contact, .special-event, section {
+    max-width: 100vw;
+    padding: 12px 2vw;
+  }
+  section[style*="background:#0a0a0a"] {
+    padding: 40px 2vw !important;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  ul, ol {
+    padding-left: 1em;
+  }
+  .map-container {
+    padding-top: 60vw;
+    min-height: 220px;
+  }
+  .map-container iframe {
+    min-height: 220px;
+  }
+  .video-container {
+    padding-bottom: 60vw;
+    min-height: 220px;
+  }
+  .video-container iframe {
+    min-height: 220px;
+  }
+  .button-link, a[onclick*="Calendly"] {
+    font-size: 1em !important;
+    padding: 12px 18px !important;
+    border-radius: 30px !important;
+    width: 90vw;
+    max-width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+  }
+}
 }
